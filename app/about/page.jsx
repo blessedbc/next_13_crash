@@ -1,11 +1,13 @@
-import React from 'react'
+export const metadata = {
+  title: 'About Benedict Media'
+}
 
-function AboutPage() {
+const AboutPage = () => {
   return (
     <div>
       <h1>About My Page</h1>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique facere dolore molestiae esse, soluta hic, fugiat tempora placeat reprehenderit exercitationem voluptates consectetur unde? Perspiciatis recusandae distinctio a consequatur dignissimos amet magni, cupiditate eveniet molestias harum pariatur laborum, praesentium nihil sapiente dolorum. Delectus molestiae magnam consequatur quidem dolore temporibus facilis consectetur!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis repudiandae, assumenda, nam sapiente ad tenetur sequi corrupti, doloremque ipsum eveniet iusto facere ex quaerat magni adipisci. Corporis ratione minus fugit, obcaecati dolor exercitationem, optio unde rerum natus provident sed sint a soluta recusandae animi vero doloremque tempore necessitatibus maiores nemo?
       </p>
     </div>
   )
