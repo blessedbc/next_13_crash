@@ -1,8 +1,9 @@
-import React from 'react'
-
-const RepoPage = () => {
+const RepoPage = ({ params: { name } }) => {
   return (
-    <div>RepoPage</div>
+    <div className='card'>
+      <h2>{name}</h2>
+      <p>Repo Details</p>
+    </div>
   )
 }
 
