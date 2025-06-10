@@ -4,9 +4,11 @@ async function fetchRepos() {
   return repos;
 }
 
-const ReposPage = () => {
+const ReposPage = async () => {
+  const repos = await fetchRepos();
+
   return (
-    <div>ReposPage</div>
+    <div>{repos[0].name}</div>
   )
 }
 
