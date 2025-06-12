@@ -4,7 +4,12 @@ import { resolve } from "styled-jsx/css";
 
 async function fetchRepos() {
   const response = await fetch(
-    'https://api.github.com/users/blessedbc/repos'
+    'https://api.github.com/users/blessedbc/repos',
+    {
+      next: {
+        revalidate: 60,
+      }
+    }
   );
 
   await new Promise((resolve) => setTimeout(resolve, 1000));
